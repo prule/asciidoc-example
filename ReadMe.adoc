@@ -1,0 +1,5 @@
+== A Brief Introduction to AsciiDoc
+
+Asciidoc is a text document format similar to markdown but with extra features and a more standardized syntax. It can output to different formats like html, pdf, docx, epub, etc.
+
+Like markdown, it is a plain text format, so it is easy to read and edit.
