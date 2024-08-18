@@ -3,3 +3,9 @@
 Asciidoc is a text document format similar to markdown but with extra features and a more standardized syntax. It can output to different formats like html, pdf, docx, epub, etc.
 
 Like markdown, it is a plain text format, so it is easy to read and edit.
+
+
+
+https://github.com/asciidoctor/asciidoctor-gradle-examples/blob/master/asciidoc-to-pdf-example/build.gradle
+
+https://intellij-asciidoc-plugin.ahus1.de/docs/users-guide/features/advanced/spring-rest-docs.html

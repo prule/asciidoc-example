@@ -2,7 +2,7 @@
 
 case "$1" in
 
-  'ad:html')
+  'docs:html')
     echo ""
     echo "Generating asciidoc HTML"
     echo ""
@@ -11,7 +11,7 @@ case "$1" in
     echo ""
     ;;
 
-  'ad:pdf')
+  'docs:pdf')
     echo ""
     echo "Generating asciidoc PDF"
     echo ""
@@ -19,6 +19,15 @@ case "$1" in
     echo "See output in build/docs/asciidocPdf/"
     echo ""
     ;;
+
+    'docs:all')
+      echo ""
+      echo "Generating all asciidoc"
+      echo ""
+      ./gradlew lib:clean lib:generateDocs
+      echo "See output in build/docs/asciidocPdf/"
+      echo ""
+      ;;
 
   'build')
     echo ""

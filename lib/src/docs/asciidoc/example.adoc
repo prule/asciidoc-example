@@ -1,5 +1,11 @@
+:source-highlighter: rouge
+
+:toc:
+:toclevels: 3
+
 This is an example asciidoc file.
 It demonstrates basic features of the asciidoc format.
+
 
 // commenting is possible
 
@@ -109,7 +115,33 @@ And you'll get this:
 include::../../test/kotlin/org/example/LibraryTest.kt[tags=tag1]
 ----
 
+Or, using the source attribute (specified in gradle and in intellij plugin settings):
+
+This
+```
+[source,kotlin,indent=0]
+----
+\include::{source}/org/example/LibraryTest.kt[tags=tag1]
+----
+```
+
+Will produce:
+
+[source,kotlin,indent=0]
+----
+include::{source}/org/example/LibraryTest.kt[tags=tag1]
+----
+
 The intellij plugin will show you the result in a preview pane, and you can click on the tag to jump to it. If the link doesn't resolve, you'll see the error highlighted in the editor.
+
+// https://docs.asciidoctor.org/asciidoc/latest/macros/images/
+image:./images/intellij-asciidoc-settings.png[Intellij plugin settings - showing source attribute definition]
+
+[source,kotlin,indent=0]
+----
+include::../../../build.gradle.kts[tags=asciidoctor-gradle-configuration]
+----
+
 
 See:
 
@@ -117,7 +149,16 @@ See:
 - https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/
 - https://docs.asciidoctor.org/asciidoc/latest/directives/include-with-indent/
 
+- https://github.com/asciidoctor/asciidoctor-intellij-plugin
 
 === More information
 
 - https://matthewsetter.com/asciidoc-plugin-for-intellij-review/
+
+Include a csv file:
+
+.Sample CSV
+[source,csv]
+,===
+include::../data/simple.csv[]
+,===
