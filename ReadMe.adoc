@@ -174,7 +174,7 @@ This produces output in the build folder:
 
 Have fun documenting your code! There's much more to Asciidoc than what I've covered here, but this is a good starting point.
 
-GitHub will render asciidoc files, so you can see the output of this file here: {url-repo}
+GitHub will (somewhat) render asciidoc files, so you can see the output of this file here: {url-repo} - unfortunately github doesn't support includes, something which is mentioned here https://github.com/github/markup/issues/1095
 
 There is a copy of the gradle generated output in `lib/example-output` if you want to see what it looks like.
 
