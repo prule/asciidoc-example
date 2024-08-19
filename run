@@ -20,14 +20,14 @@ case "$1" in
     echo ""
     ;;
 
-    'docs:all')
-      echo ""
-      echo "Generating all asciidoc"
-      echo ""
-      ./gradlew lib:clean lib:generateDocs
-      echo "See output in build/docs/asciidocPdf/"
-      echo ""
-      ;;
+  'docs:all')
+    echo ""
+    echo "Generating all asciidoc"
+    echo ""
+    ./gradlew lib:clean lib:generateDocs
+    echo "See output in build/docs/asciidocPdf/"
+    echo ""
+    ;;
 
   'build')
     echo ""
@@ -93,6 +93,9 @@ case "$1" in
     echo "$(tput setaf 3)    run                                        $(tput sgr0)      Run the application"
     echo "$(tput setaf 3)    test                                       $(tput sgr0)      Run tests"
     echo "$(tput setaf 3)    doc                                        $(tput sgr0)      Generate Dokka documentation and open in browser"
+    echo "$(tput setaf 3)    docs:all                                   $(tput sgr0)      Generate asciidoc documentation"
+    echo "$(tput setaf 3)    docs:html                                  $(tput sgr0)      Generate asciidoc documentation as HTML only"
+    echo "$(tput setaf 3)    docs:pdf                                   $(tput sgr0)      Generate asciidoc documentation as PDF only"
     echo "$(tput setaf 3)    gradle:upgrade <version>                   $(tput sgr0)      Upgrade gradle"
     echo "$(tput setaf 3)    report:test:open                           $(tput sgr0)      Open junit test reports for all modules"
 
