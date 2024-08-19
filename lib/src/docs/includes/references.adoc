@@ -1,0 +1,18 @@
+== References
+
+* Asciidoctor
+** https://asciidoctor.org
+** https://docs.asciidoctor.org
+
+* Gradle Support
+** https://asciidoctor.github.io/asciidoctor-gradle-plugin/master/
+** https://github.com/asciidoctor/asciidoctor-gradle-examples/
+
+* Intellij Support
+** https://matthewsetter.com/asciidoc-plugin-for-intellij-review/
+** https://github.com/asciidoctor/asciidoctor-intellij-plugin
+
+* More
+** Spring Rest Docs
+*** https://docs.spring.io/spring-restdocs/docs/current/reference/htmlsingle/#working-with-asciidoctor
+*** https://intellij-asciidoc-plugin.ahus1.de/docs/users-guide/features/advanced/spring-rest-docs.html

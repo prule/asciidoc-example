@@ -1,6 +1,8 @@
 import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import org.asciidoctor.gradle.jvm.pdf.AsciidoctorPdfTask
 
+// see gradle/libs.versions.toml for the configuration of the version catalog.
+
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.jvm)

@@ -11,7 +11,9 @@ It demonstrates basic features of the asciidoc format.
 
 ---
 
-From https://opensource.com/article/22/8/drop-markdown-asciidoc
+[sidebar]
+Some basic formatting
+
 
 == Heading 2
 
@@ -23,11 +25,6 @@ From https://opensource.com/article/22/8/drop-markdown-asciidoc
 
 ====== Heading 6
 
-[source,python]
-----
-print('a whole code block')
-----
-
 *Bold*
 
 _Italics_
@@ -35,6 +32,12 @@ _Italics_
 *_Bold and italic_*
 
 `Monospace or code`
+
+.Code block
+[source,kotlin]
+----
+println("Hello asciidoctor!")
+----
 
 ---
 
@@ -66,9 +69,6 @@ From https://docs.asciidoctor.org/asciidoc/latest/blocks/sidebars/
 Sidebars are used to visually separate auxiliary bits of content
 that supplement the main text.
 
----
-
-From https://docs.asciidoctor.org/asciidoc/latest/blocks/sidebars/
 
 .Optional Title
 ****
@@ -91,20 +91,19 @@ const { expect, expectCalledWith, heredoc } = require('../test/test-utils')
 This is awesome - we can insert snippets of code from files. There are several ways to do this, but here I'm showing how to do it by using tags in the source code.
 
 You can tag the source code like this:
-```
+[source,kotlin,indent=0]
+----
     // tag::tag1[]
-<awesome code goes here>
+awesome code goes here...
     // end::tag1[]
-```
+----
 
 And then you can reference the tag in an include:
 
-```
 [source,kotlin,indent=0]
 ----
 \include::../../test/kotlin/org/example/LibraryTest.kt[tags=tag1]
 ----
-```
 
 And you'll get this:
 
@@ -118,12 +117,11 @@ include::../../test/kotlin/org/example/LibraryTest.kt[tags=tag1]
 Or, using the source attribute (specified in gradle and in intellij plugin settings):
 
 This
-```
+
 [source,kotlin,indent=0]
 ----
 \include::{source}/org/example/LibraryTest.kt[tags=tag1]
 ----
-```
 
 Will produce:
 
@@ -137,10 +135,6 @@ The intellij plugin will show you the result in a preview pane, and you can clic
 // https://docs.asciidoctor.org/asciidoc/latest/macros/images/
 image:./images/intellij-asciidoc-settings.png[Intellij plugin settings - showing source attribute definition]
 
-[source,kotlin,indent=0]
-----
-include::../../../build.gradle.kts[tags=asciidoctor-gradle-configuration]
-----
 
 
 See:
@@ -149,16 +143,27 @@ See:
 - https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/
 - https://docs.asciidoctor.org/asciidoc/latest/directives/include-with-indent/
 
-- https://github.com/asciidoctor/asciidoctor-intellij-plugin
 
-=== More information
 
-- https://matthewsetter.com/asciidoc-plugin-for-intellij-review/
+=== Include a csv file
 
-Include a csv file:
+
+
+----
+.Sample CSV
+[source,csv]
+,===
+include::../data/simple.csv[]
+,===
+----
+
+Output:
 
 .Sample CSV
 [source,csv]
 ,===
 include::../data/simple.csv[]
 ,===
+
+
+include::../includes/references.adoc[]

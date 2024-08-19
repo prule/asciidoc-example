@@ -3,3 +3,18 @@
 
 # Ignore Gradle build output directory
 build
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/codeStyles/Project.xml
+/.idea/.gitignore
+/.idea/asciidoc-example.iml
+/.idea/cody_history.xml
+/.idea/compiler.xml
+/.idea/gradle.xml
+/.idea/jarRepositories.xml
+/.idea/jpa-buddy.xml
+/.idea/kotlinc.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/runConfigurations.xml
+/.idea/scala_compiler.xml
+/.idea/vcs.xml
