@@ -13,7 +13,7 @@ guava = { module = "com.google.guava:guava", version.ref = "guava" }
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter-engine" }
 
 [plugins]
-jvm = { id = "org.jetbrains.kotlin.jvm", version = "1.9.25" }
+jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.0.20" }
 asciidoctor-convert = { id = "org.asciidoctor.jvm.convert", version.ref = "asciidocter" }
 asciidoctor-pdf = { id = "org.asciidoctor.jvm.pdf", version.ref = "asciidocter" }
 asciidoctor-epub = { id = "org.asciidoctor.jvm.epub", version.ref = "asciidocter" }
