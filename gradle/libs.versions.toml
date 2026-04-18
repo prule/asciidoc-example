@@ -5,7 +5,7 @@
 commons-math3 = "3.6.1"
 guava = "33.3.1-jre"
 junit-jupiter-engine = "5.10.2"
-asciidocter = "4.0.3"
+asciidoctor = "4.0.5"
 
 [libraries]
 commons-math3 = { module = "org.apache.commons:commons-math3", version.ref = "commons-math3" }
@@ -14,9 +14,9 @@ junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", vers
 
 [plugins]
 jvm = { id = "org.jetbrains.kotlin.jvm", version = "1.9.25" }
-asciidoctor-convert = { id = "org.asciidoctor.jvm.convert", version.ref = "asciidocter" }
-asciidoctor-pdf = { id = "org.asciidoctor.jvm.pdf", version.ref = "asciidocter" }
-asciidoctor-epub = { id = "org.asciidoctor.jvm.epub", version.ref = "asciidocter" }
-asciidoctor-leanpub = { id = "org.asciidoctor.jvm.leanpub", version.ref = "asciidocter" }
-asciidoctor-revealjs = { id = "org.asciidoctor.jvm.revealjs", version.ref = "asciidocter" }
-asciidoctor-gems = { id = "org.asciidoctor.jvm.gems", version.ref = "asciidocter" }
+asciidoctor-convert = { id = "org.asciidoctor.jvm.convert", version.ref = "asciidoctor" }
+asciidoctor-pdf = { id = "org.asciidoctor.jvm.pdf", version.ref = "asciidoctor" }
+asciidoctor-epub = { id = "org.asciidoctor.jvm.epub", version.ref = "asciidoctor" }
+asciidoctor-leanpub = { id = "org.asciidoctor.jvm.leanpub", version.ref = "asciidoctor" }
+asciidoctor-revealjs = { id = "org.asciidoctor.jvm.revealjs", version.ref = "asciidoctor" }
+asciidoctor-gems = { id = "org.asciidoctor.jvm.gems", version.ref = "asciidoctor" }
